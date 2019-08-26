@@ -11,3 +11,6 @@ Scene 2 features several PhysicsMaterial2D assets, which can give you control of
 
 ## Scene 3
 Scene 3 introduces us to a function which adds force to a RigidBody, AddForce(). It also explains the difference between a MonoBehaviours Update and FixedUpdate functions.
+
+## Scene 4
+Scene 4 introduces on collision events that colliders will trigger in attached MonoBehaviours and shows an example of updating a score on the game manager from another script.
