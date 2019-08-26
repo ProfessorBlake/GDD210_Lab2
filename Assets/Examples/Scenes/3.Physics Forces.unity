@@ -377,7 +377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5cc56180edb2224c8c18dc3af8fe327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ForceStrength: 600
+  ForceStrength: 500
   SceneRigidbodies:
   - {fileID: 675698713}
   - {fileID: 1220689306}
