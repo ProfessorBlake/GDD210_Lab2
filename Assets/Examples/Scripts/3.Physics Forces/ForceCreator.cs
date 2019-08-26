@@ -12,6 +12,7 @@ public class ForceCreator : MonoBehaviour
 		//If we right click, apply a vertical force to our rigidbodies.
 		if(Input.GetMouseButtonDown(1))
 		{
+			Debug.Log("Adding force!");
 			for(int i = 0; i < SceneRigidbodies.Length; i++)
 			{
 				SceneRigidbodies[i].AddForce(Vector2.up * ForceStrength);
