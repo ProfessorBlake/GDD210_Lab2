@@ -32,5 +32,14 @@ public class ForceCreator : MonoBehaviour
 				SceneRigidbodies[i].AddForce(SceneRigidbodies[i].mass * -Physics2D.gravity);
 			}
 		}
+
+		/*
+			More about FixedUpdate:
+		
+			While Update is called every frame, FixedUpdate is called at a more consistent rate (~50 per second by default).
+			Manipulating physics should be done in FixedUpdate so that a reliable outcome can be expected: If we were to
+			use AddForce every frame of Update, we wouldn't be able to predict the outcome because the number of times Update is 
+			called per second changes with the performance of the game.
+		*/
 	}
 }
