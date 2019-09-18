@@ -6,6 +6,7 @@ public class ForceCreator : MonoBehaviour
 {
 	public float ForceStrength;
 	public Rigidbody2D[] SceneRigidbodies; //An array of the RigidBody2Ds in the scene.
+	public Rigidbody2D BowlingBall;
 
 	private void Update()
 	{
@@ -19,7 +20,14 @@ public class ForceCreator : MonoBehaviour
 				SceneRigidbodies[i].AddForce(Vector2.up * ForceStrength);
 			}
 		}
-	}
+
+		if (Input.GetMouseButtonDown(1))
+		{
+			Debug.Log("Adding force!");
+			BowlingBall.AddForce(new Vector2(0, ForceStrength));
+		}
+
+		}
 
 	private void FixedUpdate()
 	{
@@ -29,7 +37,7 @@ public class ForceCreator : MonoBehaviour
 		{
 			for (int i = 0; i < SceneRigidbodies.Length; i++)
 			{
-				SceneRigidbodies[i].AddForce(SceneRigidbodies[i].mass * -Physics2D.gravity);
+				SceneRigidbodies[i].AddForce(SceneRigidbodies[i].mass * -Physics2D.gravity * 2f);
 			}
 		}
 

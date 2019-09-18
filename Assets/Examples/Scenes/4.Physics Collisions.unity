@@ -383,6 +383,7 @@ MonoBehaviour:
   - {fileID: 675698713}
   - {fileID: 1220689306}
   - {fileID: 1273545241}
+  BowlingBall: {fileID: 0}
 --- !u!114 &218325474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1287,7 +1288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &675698711
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1599,7 +1600,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220689302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.19, y: 0.85, z: 0}
+  m_LocalPosition: {x: -0.88, y: 0.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1688,7 +1689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!58 &1273545240
 CircleCollider2D:
   m_ObjectHideFlags: 0
